@@ -52,7 +52,7 @@ func TestCalculate(t *testing.T) {
 		{name: "5+3=8",
 			args:    args{st: Statement{op1: 5, op2: 3, sign: "+"}},
 			wantRes: 8,
-			wantErr: true},
+			wantErr: false},
 	}
 
 	for _, tt := range tests {
